@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,m,n,age1,age2,i;
+	for(age1=10,i=0;age1<100;age1++)
+	{
+	    a=age1/10;
+	    b=age1-a*10;
+	    for(age2=10;age2<100;age2++)
+	    {
+	    	if(age2==(a+b)*3)
+	    	{
+	    		m=age2/10;
+	    		n=age2-m*10;
+	    		if(age1==(m+n)*2)
+	    		i++;
+	    		else continue;
+	    	}
+	    	else continue;
+		}
+	}
+	printf("%d",i);
+	return 0;
+}
