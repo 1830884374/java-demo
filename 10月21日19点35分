@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int M,N;
+	int mod(int,int);
+	scanf("%d%d",&M,&N);
+	mod(M,N);
+	return 0; 
+}
+int mod(int a,int b)
+{
+	int c;
+	for(c=1;(c-1)*b<a;)
+	{
+		c++;
+	}
+	if(a-(c-1)*b==0)
+	printf("YES");
+	else
+	printf("NO");
+}
